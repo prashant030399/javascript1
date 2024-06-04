@@ -1,0 +1,48 @@
+<html>
+<head>
+    <script>
+        function add()
+        {
+            var a=document.getElementById("t1").value;
+            var b=document.getElementById("t2").value;
+            var c=parseInt(a)+parseInt(b);
+            document.write(c)
+        }
+        function sub()
+        {
+            var a=document.getElementById("t1").value;
+            var b=document.getElementById("t2").value;
+            var c=parseInt(a)-parseInt(b);
+            document.write(c)
+        }
+        function multi()
+        {
+            var a=document.getElementById("t1").value;
+            var b=document.getElementById("t2").value;
+            var c=parseInt(a)*parseInt(b);
+            document.write(c)
+        }
+        function div()
+        {
+            var a=document.getElementById("t1").value;
+            var b=document.getElementById("t2").value;
+            var c=parseInt(a)/parseInt(b);
+            document.write(c)
+        }
+
+        
+        </script>
+
+
+        <body>
+            <input type ="text" id="t1">
+            <input type ="text" id="t2">
+            <input type ="button" value="Multi" onclick="add()">
+            <input type ="button" value="Multi" onclick="sub()">
+
+            <input type ="button" value="Multi" onclick="multi()">
+            <input type ="button" value="Multi" onclick="div()">
+
+        </body>
+        </head>
+        </html>

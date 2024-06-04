@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <script>
+            function check()
+            {
+                var a,b,c;
+         a= parseInt(document.getElementById("t1").value);
+          b= parseInt(document.getElementById("t2").value);
+            c= parseInt(document.getElementById("t3").value);
+
+
+
+            if(isNaN(a)==true)
+            {
+                document.getElementsById("x").innerHTML=("must be no");
+            }
+            
+            else  if(a<12  || a>90)
+            {
+                document.getElementsById("x").innerHTML=("must be from 12 to 90");
+            }
+            else 
+            {
+                document.getElementsById("x").innerHTML=("invalid");
+
+
+            }
+
+
+            if(isNaN(b)==true)
+            {
+                document.getElementsById("y").innerHTML=("must be no");
+            }
+            
+            else  if(b.length !=10)
+            {
+                document.getElementsById("y").innerHTML=("must be 10 digit");
+            }
+            else 
+            {
+                document.getElementsById("y").innerHTML="invalid";
+            }
+
+
+
+
+            if(isNaN(c)==true)
+            {
+                document.getElementsById("z").innerHTML=("must be no");
+            }
+            
+            else  if(c<0 || c>100)
+            {
+                document.getElementsById("z").innerHTML=("must be from 0 to 100");
+            }
+            else 
+            {
+                document.getElementsById("z").innerHTML=("invalid");
+            }
+
+
+
+
+
+        }
+
+        </script>
+        <body>
+            <input type="text" id="t1">
+            <input type="text" id="t2">
+            <input type="text" id="t3">
+            <input type="button" value="Check" onclick="check()">
+            <p id="x"></p>
+            <p id="y"></p>
+            <p id="z"></p>
+            
+
+
+
+
+        </body>
+    </head>
+
+</html>

@@ -1,0 +1,64 @@
+<script>
+
+var p;
+var m=9,s=59;
+
+ p=setInterval( 
+    function()
+
+{
+    p=document.getElementById("x").innerHTML="timeleft" +m+":"+s;
+    s--;
+    
+    if(s==-1)
+    {
+        s=59;
+    
+        m--
+        
+    }
+
+
+    if(m==-1)
+    {
+        clearInterval(p);
+        document.getElementById("x1").style.visibility="hidden";
+    }
+
+
+
+},1000
+)
+
+</script>
+<body>
+
+
+
+    <div id="x1">
+
+<h1 align:center;  > Addition/Factorial/EvenOdd </h1>
+
+    <a href="addd.html">
+
+    <input type="button" id="t1" value="addition">
+</a>
+
+
+<a href="c++.html">
+    <input type="button" id="t2" value="factorial">
+</a>
+
+
+
+<a href="java.html">
+
+    <input type="button" id="t3" value="even odd">
+</a>
+
+
+<p id="x"></p>
+</div>
+
+
+</body>

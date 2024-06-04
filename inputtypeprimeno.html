@@ -1,0 +1,40 @@
+<html>
+<head>
+    <script>
+      
+
+        function primeno()
+        {     var i,j,c=0;
+            var a=document.getElementById("t1").value;
+            var b=document.getElementById("t2").value;
+
+
+            for(i=parseInt(a);i<=parseInt(b);i++)
+            {
+                for(j=1;j<=i;j++)
+                {
+                    if(i%j==0)
+                    {
+                        c=c+1;
+                    }
+                }
+                if(c==2)
+                {
+                    document.write(i);
+                    document.write("<br>")
+                }
+                c=0;
+            }
+           
+        }
+    
+        </script>
+        <body>
+            <input type="text" id="t1">
+            <input type="text" id="t2">
+           
+            <input type="button" value="Prime No" onclick="primeno()">
+        </body>
+        </head>
+</html>
+

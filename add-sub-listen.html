@@ -1,0 +1,47 @@
+<html>
+<head>
+    <body>
+        <input type="text" id="t1" >
+        <input type="text" id="t2" >
+        <input type="button" value="+" onclick="add()">
+        <input type="button" value="-" onclick="sub()">
+        <p id="x"></p>
+
+
+
+
+
+    </body>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=wU7Xnv9L"></script>
+    <script>
+
+    function add()
+    {
+        a=document.getElementById("t1").value;
+        b=document.getElementById("t2").value;
+        c= parseInt(a)+parseInt(b);
+        document.getElementById("x").innerHTML=c;
+         responsiveVoice.speak("the result is:"+c);
+    }
+    function sub()
+    {
+        a=document.getElementById("t1").value;
+        b=document.getElementById("t2").value;
+        c= parseInt(a)-parseInt(b);
+        document.getElementById("x").innerHTML=c;
+        responsiveVoice.speak("the result is:"+c);
+    }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <body>
+            <input type="text" id="x">
+            <input type="button" value="ok" onclick="show()">
+            <p id="t1"></p>
+
+
+
+        </body>
+        <script src="https://code.responsivevoice.org/responsivevoice.js?key=wU7Xnv9L"></script>
+        <script>
+            
+           function show()
+           {
+            var a=document.getElementById("x").value;
+           if(isNaN(a)==true)
+           {
+            document.getElementById("t1").innerHTML="must be a no";
+           }
+           
+           else  if(a%2==0)
+            {
+                document.getElementById("t1").innerHTML="even";
+                responsiveVoice.speak("EVEN");
+
+            }
+            else
+            {
+                document.getElementById("t1").innerHTML="odd";
+                responsiveVoice.speak("ODD");
+            }
+
+           }
+
+
+
+
+
+            </script>
+
+    </head>
+</html>

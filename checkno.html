@@ -1,0 +1,36 @@
+<html>
+    
+<head>
+    <script>
+        function check()
+        {
+            var a=document.getElementById('t1').value;
+            if(isNaN(a)==true)
+            {
+                document.write("plz enter only no");
+            }
+            else if(a<12 || a>90)
+                {
+                    document.write("12 to 90");
+                }
+          else             
+          {
+              document.write("invalid");
+          }
+
+        }
+
+
+
+
+        </script>
+        <body>
+            <input type="text" id='t1'>
+            <input type ="button" value="check" onclick="check()">
+        </body>
+        </head>
+    </html>
+
+
+
+

@@ -1,0 +1,21 @@
+<html>
+<head>
+   <script>
+       function add()
+       {
+       var a,b,c;
+        a=parseInt(document.getElementById('t1').value);
+        b=parseInt(document.getElementById('t2').value);
+     c=a+b;
+     document.getElementById("x").innerHTML=c;
+       }
+       </script>
+       <body>
+       <input type="text" id="t1">
+       <input type="text" id="t2">
+       <input type="button" value="+" onclick="add()">
+       <p id="x"></p>
+       
+    </body>
+       </head>
+    </html>

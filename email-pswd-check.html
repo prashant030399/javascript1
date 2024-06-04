@@ -1,0 +1,65 @@
+
+        <script>
+            function show()
+            {
+                
+                var d=document.getElementById("t4").value;
+                var e=document.getElementById("t5").value;
+                var a=document.getElementById("t1").value;
+                var b=document.getElementById("t2").value;
+                var c=document.getElementById("t3").value;
+alert(d);
+            var rxemail= /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var rxname = /^[a-zA-Z ]{2,30}$/;
+            var rxpswd = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+
+         
+             if (isNaN(a)==true)
+            {
+                alert("invalid rollno");
+            }
+             if(rxname.test(b)==false)
+            {
+                alert("invalid name");
+            }
+            
+              if(rxemail.test(c)==false)
+            {
+                alert("invalid email");
+            }
+1           
+           if(rxpswd.test(d)==false)
+          {
+            alert("should be strong password");
+          }
+          
+        if(e!=d)
+          {
+            alert("password is not matching");
+          }
+        
+          
+        }
+</script>
+
+<body>
+
+
+<h1>Validation</h1>
+
+
+
+    rollno           <input type="text" id="t1"><br>
+    name             <input type="text" id="t2"><br>
+    email            <input type="text" id="t3"><br>
+    password         <input type="text" id="t4"><br>
+    confirm password <input type="text" id="t5">
+
+   <br>
+
+
+    <input type="button" value="Ok" onclick="show()">
+
+</body>
+            
+            

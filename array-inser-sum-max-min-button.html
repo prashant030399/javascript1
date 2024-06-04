@@ -1,0 +1,79 @@
+<html>
+<script>
+    var x=[];
+
+    function insert()
+    {
+        x.push(parseInt(document.getElementById("t1").value));
+        document.getElementById("t1").value="";
+    }
+
+
+
+
+
+
+
+    function summ()
+    {
+        var s=0;
+        for(i=0;i<x.length;i++)
+        {
+            s=s+x[i];
+        }
+        document.getElementById("z").innerHTML=s;
+
+    }
+
+
+    function maxx()
+    {
+        
+ var maxx=x[0];
+ for(i=0;i<x.length;i++)
+ {
+   if(x[i]>maxx)
+   {
+    maxx=x[i];
+   }
+ 
+ }
+ document.getElementById("z").innerHTML=maxx;
+    }
+
+
+function minn()
+{
+    var minn=x[0];
+    for(i=0;i<x.length;i++)
+    {
+        if(x[i]<minn)
+        {
+            minn=x[i];
+        }
+    }
+    document.getElementById("z").innerHTML=minn;
+}
+
+    </script>
+
+
+    <body>
+
+
+    <h1> Array Function   </h1>
+       
+      
+      <input type="text" id="t1"> 
+        
+        <input type="button" value="insert values" onclick="insert()"> <br>
+        <input type="button" value="sum" onclick="summ()"> <br>
+        <input type="button" value="maxx" onclick="maxx()"> <br>
+        <input type="button" value="minn" onclick="minn()">
+
+        <p id="z"></p>
+
+
+
+
+    </body>
